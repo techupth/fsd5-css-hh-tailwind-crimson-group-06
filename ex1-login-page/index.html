@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <!-- Start coding here -->
-</body>
-
+  <body class="bg-slate-200 flex items-center justify-center h-screen">
+    <div class="login-page w-1/4"> 
+      <div class="login-box bg-white rounded-xl  text-zinc-600 text-xl p-6">
+        <p class="head p-2">Login to Website</p>
+        <div class="info-box flex items-center justify-center p-2">
+        <form>
+<div class="email flex gap-10 p-1">
+  <label for="email" class="text-gray-600 text-sm font-semibold mb-2 p-2 ">Email</label>
+  <input type="email" id="email" name="email" class="w-48 h-3/4 p-1 border rounded-md hover:border-violet-500 focus:violet-300">
+</div>
+<div class="password flex gap-4 p-1">
+  <label for="password" class="text-gray-600 text-sm font-semibold mb-2 p-2 ">Password</label>
+  <input type="password" id="password" name="password" class="w-48 h-3/4 p-1 border rounded-md  hover:border-violet-500 focus:violet-300">
+</div>
+<div class="button flex justify-evenly items-center p-2">
+<button type="submit" class="flex justify-center items-center w-36 bg-violet-500 text-white rounded-full hover:bg-violet-400 active:bg-violet-600 focus:ring focus:ring-violet-300 p-2">Sign in</button>
+<button type="submit" class="flex justify-center items-center w-36 p-2 rounded-full bg-white hover:bg-violet-100 focus:ring-violet-300 focus:ring text-violet-600 ">Sign Up</button>
+</div>
+        </form>
+      </div>
+      </div>
+    </div>
+    </div>
+  </body>
 </html>
